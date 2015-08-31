@@ -1,9 +1,10 @@
 !!! 5
+- load staticfiles
 html
 	head
-		title Oscar Roa
+		title Welcome!
 		meta(charset="UTF-8")
+		link(rel="stylesheet", type="text/css", href="{% static 'css/font-awesome-4.4.0/css/font-awesome.css' %}")
 	body
-		h1 Hola putos
-		h2 Prueba de jade
-		span :v
+		header(class="Header")
+			include ./components/header/header.jade
